@@ -18,7 +18,7 @@ body {
   font-size: 3.2rem;
   font-family: "Inter", sans-serif;
   background: url("/images/pattern-curve.svg") no-repeat bottom left;
-  overflow-y: hidden;
+  overflow-y: visible;
 }
 
 p {
@@ -31,10 +31,10 @@ p {
   margin: 15rem auto;
   overflow-x: hidden;
   position: relative;
-  z-index: -1;
+  z-index: 0;
   background: url("../images/pattern-bg.svg") no-repeat right;
   background-position-y: -10rem;
-  background-size: 60%;
+  background-size: 65%;
 }
 
 .testimonial {
@@ -42,6 +42,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+  transition: transform 0.5s ease-in-out;
   &__desc {
     display: flex;
     justify-content: center;
@@ -98,7 +99,7 @@ button {
   cursor: pointer;
 }
 
-.btn--prevoius {
+.btn--previous {
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
 }
